@@ -60,5 +60,4 @@ sess_data 변수 값이 배열이 아니라면 catch 구문으로 이동을 하�
 ```select username from users where id=1 union select password from users where id=1```  
 SQL 객체를 serialize를 해주면 이렇게 된다.  
 ```O:3:"SQL":1:{s:5:"query";s:81:"select username from users where id=1 union select password from users where id=1";}```  
-이 문자열을 base64인코딩 해줘서 쿠키값으로 주면 catch 구문에서 sess_data 값을 출력을 해주므로 SQL 객체를 실행시켜서 소멸자에서 query를 실행시켜서 username에 플래그 값이 나온다.
- 
+이 문자열을 base64인코딩 해줘서 쿠키값으로 주면 catch 구문에서 sess_data 값을 출력을 해주므로 SQL 객체를 실행시켜서 소멸자에서 query를 실행시켜서 username에 플래그 값이 나온다. 

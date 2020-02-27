@@ -6,7 +6,8 @@ toc_sticky: true
 categories:
   - Websec
 tags:
-  - strcmp() vulnerability
+  - strcmp vulnerability
+  - PHP loose comparison vulnerability
 ---
 
 ## 1. Source code

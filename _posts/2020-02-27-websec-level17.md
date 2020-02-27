@@ -42,7 +42,7 @@ strcasecmp는 strcmp함수랑 똑같은 함수임. 그냥 ==이 빠진거. [strc
 ![](https://t1.daumcdn.net/cfile/tistory/2478193352ED08F92B){: .align-center}
 
 "===" 으로 비교할 때
-![](https://t1.daumcdn.net/cfile/tistory/211D203752ED093D26){: .aligh-center}
+![](https://t1.daumcdn.net/cfile/tistory/211D203752ED093D26){: .align-center}
 
 ## 3. Solution
 

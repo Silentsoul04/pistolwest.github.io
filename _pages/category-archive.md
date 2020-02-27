@@ -27,7 +27,8 @@ author_profile: true
           <li><a href="/categories/Wargame/root-me.org/">root-me.org</a></li>
           <li><a href="/categories/Wargame/suninatas/">suninatas</a></li>
           <li><a href="/categories/Wargame/overthewire/">overthewire</a></li>
-	  <li><a href="/categories/Wargame/BOF/">BOF</a></li>
+	        <li><a href="/categories/Wargame/BOF/">BOF</a></li>
+          <li><a href="/categories/Wargame/Stereotyped-Challenge/">Stereotyped Challenge</a></li>
         </ul>
     </li>
 </ul>  

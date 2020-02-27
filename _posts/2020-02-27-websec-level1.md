@@ -1,6 +1,6 @@
 ---
 title : "Websec - Level 1"
-excerpt : "Websec - Level 1"
+excerpt : "Websec - Level 1 Babysteps"
 toc : true
 toc_sticky : true
 categories :

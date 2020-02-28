@@ -37,7 +37,7 @@ public function __destruct() {
         $ret = $this->execute ();
         if (false !== $ret) {    
             while (false !== ($row = $ret->fetchArray (SQLITE3_ASSOC))) {
-                echo '<p class="well"><strong>Username:<strong> ' . $row['username'] . '</p>'; # 이 부분 잊지 말기. 잊으면 바보같이 뻘짓함.
+                echo '<p class="well"><strong>Username:<strong> ' . $row['username'] . '</p>';
             }
         }
     }

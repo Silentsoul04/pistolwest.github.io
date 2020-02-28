@@ -22,11 +22,12 @@ author_profile: true
     </li>
     <li><strong>Wargame</strong>
         <ul>
-          <li><a href="/categories/Wargame/rubiya/">los.rubiya</a></li>
-          <li><a href="/categories/Wargame/websec/">websec</a></li>
-          <li><a href="/categories/Wargame/webhacking.kr/">webhacking.kr</a></li>
+          <li><a href="/categories/Wargame/rubiya/">rubiya</a></li>
+          <li><a href="/categories/Wargame/wargame.kr/">wargame.kr</a></li>
+	  <li><a href="/categories/Wargame/websec/">Websec</a></li>
+          <li><a href="/categories/Wargame/webhacking.kr/">Webhacking.kr</a></li>
           <li><a href="/categories/Wargame/root-me.org/">root-me.org</a></li>
-          <li><a href="/categories/Wargame/suninatas/">suninatas</a></li>
+          <li><a href="/categories/Wargame/suninatas/">Suninatas</a></li>
           <li><a href="/categories/Wargame/overthewire/">overthewire</a></li>
 	  <li><a href="/categories/Wargame/BOF/">BOF</a></li>
           <li><a href="/categories/Wargame/Stereotyped-Challenge/">Stereotyped Challenge</a></li>

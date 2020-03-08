@@ -37,7 +37,7 @@ if(isset($_POST['submit'])) {
 
 ## 2. Vulnerability
 
-우선 우리는 파일에 대해 검사를 하는 if문을 만족시킬 수 없으므로 우회를 해야함. else 문을 보면 sleep(1) 코드가 있고 else문이 끝나고 unlink를 함. 즉, 1초 약간 넘는 시간동안은 파일을 볼 수 있다는 소리가 됨. 이런 기법을 **race condition**이라고 함. 시스템 해킹 기법 중 하나로 자세한 건 (race condition)[https://pistolwest.github.io/]
+우선 우리는 파일에 대해 검사를 하는 if문을 만족시킬 수 없으므로 우회를 해야함. else 문을 보면 sleep(1) 코드가 있고 else문이 끝나고 unlink를 함. 즉, 1초 약간 넘는 시간동안은 파일을 볼 수 있다는 소리가 됨. 이런 기법을 **race condition**이라고 함. 
 
 
 ## 3. Solution

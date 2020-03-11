@@ -36,7 +36,7 @@ flag.php 파일을 확인을 해야하므로 $file 값은 flag.php가 되고, �
 
 ## 3. Solution
 파일 이름에 따라 $hash 값이 바뀌게 되는데 flag.php 파일은 읽어야 되므로 '.' 과 '/'을 붙여줘서 브루트 포스를 하면 됨. 한 870번 조금 넘어설때 쯤 됨.
-
+Linux에서는 파일을 실행할 때 ./파일명 이렇게 하는데 '/'의 개수가 몇개가 있든 실행이 됨.  
 
 ```python
 import requests

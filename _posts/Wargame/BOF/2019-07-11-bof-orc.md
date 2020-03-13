@@ -6,7 +6,7 @@ toc_sticky: true
 categories:
   - BOF
 tags:
-  - buffer overflow
+  - stack buffer overflow
 ---
 
 ## 1. Source Code

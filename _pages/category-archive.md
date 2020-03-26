@@ -17,19 +17,19 @@ author_profile: true
           <li><a href="/categories/Programming/C&C++/">C,C++</a></li>
           <li><a href="/categories/Programming/Python/">Python</a></li>
           <li><a href="/categories/Programming/PHP/">PHP</a></li>
-	  <li><a href="/categories/Programming/Linux/">Linux</a></li>
+	        <li><a href="/categories/Programming/Linux/">Linux</a></li>
         </ul>
     </li>
     <li><strong>Wargame</strong>
         <ul>
           <li><a href="/categories/Wargame/rubiya/">rubiya</a></li>
           <li><a href="/categories/Wargame/wargame.kr/">wargame.kr</a></li>
-	  <li><a href="/categories/Wargame/websec/">Websec</a></li>
+	        <li><a href="/categories/Wargame/websec/">Websec</a></li>
           <li><a href="/categories/Wargame/webhacking.kr/">Webhacking.kr</a></li>
           <li><a href="/categories/Wargame/root-me.org/">root-me.org</a></li>
           <li><a href="/categories/Wargame/suninatas/">Suninatas</a></li>
           <li><a href="/categories/Wargame/overthewire/">overthewire</a></li>
-	  <li><a href="/categories/Wargame/BOF/">BOF</a></li>
+	        <li><a href="/categories/Wargame/BOF/">BOF</a></li>
           <li><a href="/categories/Wargame/Stereotyped-Challenge/">Stereotyped Challenge</a></li>
         </ul>
     </li>

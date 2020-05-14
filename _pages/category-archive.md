@@ -10,6 +10,7 @@ author_profile: true
         <ul>
           <li><a href="/categories/Hacking/WEB/">WEB</a></li>
           <li><a href="/categories/Hacking/System/">System</a></li>
+          <li><a href="/categories/Hacking/Crypt/">Crypt</a></li>
         </ul>
     </li>
     <li><strong>Programming</strong>

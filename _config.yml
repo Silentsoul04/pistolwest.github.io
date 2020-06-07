@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "해킹/프로그래밍 메모장"
+title                    : "Index"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "pistolwest"
-description              : "이걸로 밥 벌어먹을 사"
+description              : "index"
 url                      : "https://pistolwest.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "이걸로 밥 벌어먹을 사람"
+  name             : "Index"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "해킹/코딩 공부하는 사람"
+  bio              : "Student"
   location         : "South Korea"
   email            :
   links:

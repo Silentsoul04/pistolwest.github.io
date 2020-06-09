@@ -11,6 +11,8 @@ author_profile: true
           <li><a href="/categories/Hacking/WEB/">WEB</a></li>
           <li><a href="/categories/Hacking/System/">System</a></li>
           <li><a href="/categories/Hacking/Crypto/">Crypto</a></li>
+          <li><a href="/categories/Hacking/Forensic/">Forensic</a></li>
+          <li><a href="/categories/Hacking/Reversing/">Reversing</a></li>
         </ul>
     </li>
     <li><strong>Programming</strong>

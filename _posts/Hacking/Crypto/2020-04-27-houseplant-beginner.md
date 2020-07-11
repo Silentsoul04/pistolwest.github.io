@@ -1,13 +1,12 @@
 ---
-title : "Crypto"
+title : "Houseplant CTF Beginner Solution"
 excerpt : "Crypto - Houseplant CTF Beginner 공부"
 toc : true
 toc_sticky : true
 categories :
   - Crypto
 tags :
-  - Crypto
-  - Houseplant ctf Beginner
+  - Houseplant CTF
 ---
 ## 1. Tool
 Cyberchef : <a href="https://gchq.github.io/CyberChef" target="_blank">https://gchq.github.io/CyberChef</a>

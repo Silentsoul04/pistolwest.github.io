@@ -1,10 +1,9 @@
 ---
-title : "About this blog"
+title : "About me"
 layout : single
 permalink : /about/
 ---
 
-## pistolwest's memo
+## Index
 
-그냥 공부한 것들, 문제푼것들 적어두려고 힘들게 만든 블로그..
-오류좀 그만 떠라..
+열심히 하자..

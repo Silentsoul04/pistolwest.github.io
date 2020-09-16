@@ -89,7 +89,10 @@ F (32-bit floating point pixels)
 '''
 
 # 이미지 붙이기
-im2.paste(im3, (20,20,220,220)) # im2에 im3 붙이기, 
+im2.paste(im3, (20,20,220,220)) # im2에 im3 붙이기
+# 2개 튜플인 경우 -> 왼쪽 상단에서 시작, (left, upper)
+# 4개 튜플인 경우 -> 왼쪽 상단에서 시작, (left, upper, right, lower)
+# 4개인 경우 반드시 덧씌울 공간의 값이 덧씌우는 이미지보다 크면 안됌.
 im2.save("paste_result.jpg")
 
 # 이미지의 각 픽셀에 접근

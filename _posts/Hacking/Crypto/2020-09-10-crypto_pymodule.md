@@ -58,7 +58,7 @@ re.findall(pattern, string)
 
 ## 3. Image module in PIL(pillow) 
 파이썬 이미징 라이브러리로 다양한 이미지 처리 기능 제공.  
-자세한건 여기 <a href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" target="_blank">Here</a> 
+자세한건 여기 <a href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" target="_blank">Here</a>   
 참고 : <a href="https://2nit.tistory.com/22" target="_blank">https://2nit.tistory.com/22 [Inha init]</a>  
        <a href="http://pythonstudy.xyz/python/article/406-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-Pillow" target="_blank">http://pythonstudy.xyz/python/article/406-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-Pillow</a>
 

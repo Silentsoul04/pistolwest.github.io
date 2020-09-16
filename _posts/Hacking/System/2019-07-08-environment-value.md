@@ -4,6 +4,7 @@ excerpt: "환경변수 설정 및 주소 구하기"
 toc: true
 toc_sticky: true
 categories:
+  - System
   - Linux
   - BOF
 tags:

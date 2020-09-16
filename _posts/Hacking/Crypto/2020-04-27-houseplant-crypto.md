@@ -244,7 +244,7 @@ secret_enc="redacted"
 n=redacted
 # p=int(open('component.txt').read())
 p=redacted
-# q=key['n']//p
+# q=key['n'] //p
 q=n/p
 
 phi_n=(p-1)*(q-1)

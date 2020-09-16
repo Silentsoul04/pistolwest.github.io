@@ -33,6 +33,7 @@ author_profile: true
           <li><a href="/categories/Wargame/overthewire/">overthewire</a></li>
 	        <li><a href="/categories/Wargame/BOF/">BOF</a></li>
           <li><a href="/categories/Wargame/Stereotyped-Challenge/">Stereotyped Challenge</a></li>
+          <li><a href="/categories/Wargame/wechall/">wechall</a></li>
         </ul>
     </li>
 </ul>  

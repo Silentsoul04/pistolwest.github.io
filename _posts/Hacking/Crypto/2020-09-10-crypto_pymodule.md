@@ -58,7 +58,9 @@ re.findall(pattern, string)
 
 ## 3. Image module in PIL(pillow) 
 파이썬 이미징 라이브러리로 다양한 이미지 처리 기능 제공.  
-자세한건 여기 <a href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" target="_blank">Here</a>  
+자세한건 여기 <a href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" target="_blank">Here</a> 
+참고 : <a href="https://2nit.tistory.com/22" target="_blank">https://2nit.tistory.com/22 [Inha init]</a>  
+       <a href="http://pythonstudy.xyz/python/article/406-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-Pillow" target="_blank">http://pythonstudy.xyz/python/article/406-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-Pillow</a>
 
 ```python
 from PIL import Image
@@ -66,11 +68,35 @@ from PIL import Image
 # 이미지 열기
 im = Image.open('python.png')
 
-#새로운 이미지 파일 생성
+#새로운 이미지 파일 생성 Image.new(mode, size, color)
 new = Image.new('new.png') 
+im2 = Image.new("RGB", (500,500), (200,200,200)) # color default : black(0,0,0)
+im3 = Image.new("RGB", (200,200))  
+
+## mode 종류
+'''
+1 (1-bit pixels, black and white, stored with one pixel per byte)
+L (8-bit pixels, black and white)
+P (8-bit pixels, mapped to any other mode using a color palette)
+RGB (3x8-bit pixels, true color)
+RGBA (4x8-bit pixels, true color with transparency mask)
+CMYK (4x8-bit pixels, color separation)
+YCbCr (3x8-bit pixels, color video format)
+LAB (3x8-bit pixels, the L*a*b color space)
+HSV (3x8-bit pixels, Hue, Saturation, Value color space)
+I (32-bit signed integer pixels)
+F (32-bit floating point pixels)
+'''
+
+# 이미지 붙이기
+im2.paste(im3, (20,20,220,220)) # im2에 im3 붙이기, 
+im2.save("paste_result.jpg")
+
+# 이미지의 각 픽셀에 접근
+pix=im.load()
 
 # 이미지 크기 출력
-print(im.size)
+print(im.size) # return (width, height)
  
 # 이미지 JPG로 저장
 im.save('python.jpg')

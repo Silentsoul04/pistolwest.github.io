@@ -11,17 +11,24 @@ tags:
   - 환경변수
 ---
 
-## 1. 환경변수 설정
-export 변수명=변수값
-```php
-ex)
-export addr=`python -c 'print "\x90"*100+ "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80"'`
+## 1. 환경변수 설정 및 해제
+1회성 설정 방법
 ```
-환경변수가 있는지 확인하고 싶으면 env | grep 변수명 ex) env | grep addr
+env : 환경변수 조회 및 해제
+env NAME=VALUE : NAME 환경변수에 VALUE 값 지정
+env -u NAME : NAME 환경변수 제거
+```
+```
+set NAME=VALUE : NAME 환경변수에 VALUE 값 지정, bash 에선 set 생략 가능
+unset NAME : NAME 환경변수 해제
+```
+```
+export NAME=VALUE 
+```
+영구 설정 방법은 참고자료에서 확인
 
 ## 2. 환경변수 주소 구하기
-
-```php
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -31,3 +38,8 @@ int main(int argc, char *argv[])
    return 0;
 }
 ```
+
+## Reference
+<a href="https://sites.google.com/site/sunitwarehouse/os/linux/0001" target="_blank">https://sites.google.com/site/sunitwarehouse/os/linux/0001</a>  
+<a href="https://hashcode.co.kr/questions/1893/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-%EC%84%A4%EC%A0%95%ED%95%A0-%EB%95%8C-env-set-export-declare" target="_blank">set, env, export, declare 차이점</a>  
+

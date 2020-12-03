@@ -2,7 +2,6 @@
 title: "Linux 명령어"
 excerpt: "Linux 명령어"
 toc: true
-
 categories:
   - Linux
 tags :
@@ -49,7 +48,7 @@ $ : 쉘 변수를 가르킴.
 
 작은따옴표는 모든 특수기호, 큰 따옴표는 $,`,\를 제외한 모든 특수기호를 일반문자로 간주
 
-` ` : 셸은 ` ` 로 감싸인 문자열을 명령으로 해석하게 함.
+` ` 또는 $() : 셸은 ` ` 또는 $()로 감싸인 문자열을 명령으로 해석하게 함.
 
 \ : 특수문자 앞에 사용, 특수 문자의 효과를 없애고 일반 문자처럼 처리함.
 ```
@@ -712,6 +711,19 @@ filtered:   방화벽이나 필터에 막혀 해당 포트의 open, close 여부
 closed:     포트스캔을 한 시점에는 listen 상태가 아님을 나타냄
 unfiltered: 스캔에 응답은 하지만 해당 포트의 open, close 여부는 알 수 없을 때
 ```
+### http-backup-finder
+```
+nmap -p<port> --script=http-backup-finder --script-args http-backup-finder.url=url host
+
+PORT   STATE SERVICE REASON
+80/tcp open  http    syn-ack
+| http-backup-finder:
+| Spidering limited to: maxdepth=3; maxpagecount=20; withindomain=example.com
+|   http://example.com/index.bak
+|   http://example.com/login.php~
+|   http://example.com/index.php~
+|_  http://example.com/help.bak
+```
 
 ## nc [option] [hostname] [port] : TCP ,UDP 프로토콜을 사용하는 네트워크 연결에서 데이터를 읽고 쓰는 명령어.
 ```
@@ -733,8 +745,4 @@ option
 -r :여러개의 포트를 지정했을 때 스캐닝 순서를 랜덤하게 한다.
 
 -z : 연결을 이루기위한 최소한의 데이터 외에는 보내지 않게 하는 옵션
-
--e [program] : 연결되었을 때, 프로그램을 실행함 (위험) 
-  ex) : nc –l –p [port] –e  /bin/bash // 리눅스 환경에서 백도어 쉘
-  ex) : nc –l –p [port] -e cmd.exe // 윈도우 환경에서 백도어 쉘
 ```

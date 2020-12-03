@@ -44,6 +44,8 @@ Crypto.Util.number.long_to_bytes(n, blocksize=0) # long int를 byte string으로
 \w - 문자+숫자(alphanumeric)와 매치, [a-zA-Z0-9_]와 동일한 표현식이다.
 
 \W - 문자+숫자(alphanumeric)가 아닌 문자와 매치, [^a-zA-Z0-9_]와 동일한 표현식이다.
+
++는 "하나 혹은 그 이상 연결된" 이란 뜻.
 ```
 ```python
 import re
@@ -53,7 +55,7 @@ re.search(pattern, string)
 
 re.findall(pattern, string) 
 # 정규식과 매치되는 모든 문자열을 리스트로 돌려준다. 
-# ex) re.findall("\d+",msg)
+# ex) re.findall("\d+",msg) -> 하나 혹은 그 이상 연결된 숫자를 찾아라
 ```
 
 ## 3. Image module in PIL(pillow) 

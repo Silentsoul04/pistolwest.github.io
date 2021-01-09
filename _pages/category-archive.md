@@ -37,4 +37,17 @@ author_profile: true
           <li><a href="/categories/Wargame/pwnable-kr/">Pwnable.kr</a></li>
         </ul>
     </li>
-</ul>  
+    <li><strong>Study</strong>
+        <ul>
+          <li><a href="/categories/Study/Data-Structure/">Data-Structure</a></li>
+          <li><a href="/categories/Study/Computer-Networking/">Computer-Networking</a></li>
+          <li><a href="/categories/Study/Computer-System/">Computer-System</a></li>
+          <li><a href="/categories/Study/Discrete-Mathematics/">Discrete-Mathematics</a></li>
+        </ul>
+    </li>
+    <li><strong>기타 잡다한 정보들</strong>
+        <ul>
+          <li><a href="/categories/etc/news/">기타 잡다한 정보들</a></li>
+        </ul>
+    </li>
+</ul>

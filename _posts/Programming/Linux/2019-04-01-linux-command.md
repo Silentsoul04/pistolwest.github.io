@@ -8,6 +8,9 @@ tags :
   - Linux Commands
 ---
 
+## Linux Cheat Sheet
+<a href="http://www.seren.net/documentation/unix%20utilities/Linux_Cheat_Sheet.htm" target="_blank">http://www.seren.net/documentation/unix%20utilities/Linux_Cheat_Sheet.htm</a>
+
 ## 리눅스 기초 특수기호 문자
 ```
 ‘>‘ 표준 출력 리다이렉션 : 출력 방향을 바꿈.
@@ -418,8 +421,6 @@ $  |  행의 끝 지시자  |  ‘love$’  |  love로 끝나는 모든 행 출�
 .  |  하나의 문자와 대응  |  ‘l..e’  |  l다음에 2문자가 오고 e로 끝나는 문자 출력
 [] |  []사이의 문자 중 하나와 대응되면 출력  |  ‘[Ll]ove’  | Love나 love 문자 출력
 [^]  |  []사이의 문자에 속하지 않는 문자 출력  |  ‘[^A-K]ove’  |  [A-K]ove이외의 문자 출력
-\<  |  단어의 시작 지시자  |  ‘\<love’  |  love로 시작하는 단어를 포함하는 행 출력
-\>  |  단어의 끝 지시자  |  ‘\>love’  |  love로 끝나는 단어를 포함하는 행 출력
 x\{m\}  |  문자 x를 m번 반복  |  ‘o\{5\}’  |  문자 o가 5회 연속으로 나오는 모든 행 출력
 x\{m,\}  |  문자 x를 적어도 m번 반복  |  ‘o\{5,\}’  |  문자 o가 최소한 5번 반복되는 모든 행 출력
 x\{m,n\}  |  m회 이상 n회 이하 반복  |  ‘o\{5,10\}'  |  문자 o가 5회 이상 10회 이하 반복되는 모든 행 출력

@@ -373,3 +373,26 @@ USER() == SYSTEM_USER() == SESSION_USER()
 mysql> SELECT USER();
         -> 'davida@localhost'
 ```
+
+### REPLACE
+```
+REPLACE(str,from_str,to_str)
+
+mysql> SELECT REPLACE('www.mysql.com', 'w', 'Ww');
+        -> 'WwWwWw.mysql.com'
+```
+
+### INSERT
+```
+INSERT(str,시작 위치,len,newstr)
+-> str에서 시작 위치에서 len만큼 newstr로 변경
+-> 인자 중 NULL이 있으면 NULL 리턴
+
+mysql> SELECT INSERT('Quadratic', 3, 4, 'What');
+        -> 'QuWhattic'
+mysql> SELECT INSERT('Quadratic', -1, 4, 'What');
+        -> 'Quadratic'
+mysql> SELECT INSERT('Quadratic', 3, 100, 'What');
+        -> 'QuWhat
+```
+

@@ -35,6 +35,9 @@ author_profile: true
           <li><a href="/categories/Wargame/Stereotyped-Challenge/">Stereotyped Challenge</a></li>
           <li><a href="/categories/Wargame/wechall/">Wechall</a></li>
           <li><a href="/categories/Wargame/pwnable-kr/">Pwnable.kr</a></li>
+          <li><a href="/categories/Wargame/web-security-academy/">Web Security Academy</a></li>
+          <li><a href="/categories/Wargame/google-xss-game/">Google XSS Game</a></li>
+          <li><a href="/categories/Wargame/CTFlearn/">CTFlearn</a></li>
         </ul>
     </li>
     <li><strong>Study</strong>

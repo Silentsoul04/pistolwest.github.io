@@ -83,6 +83,3 @@ select table_name, column_name from information_schema.columns where table_schem
 또는 현재 db에 있는 것들을 보고 싶다면
 select table_name, column_name from information_schema.columns where table_schema =  database()
 ```
-```
-
-```
